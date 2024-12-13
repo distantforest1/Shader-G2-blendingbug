@@ -9,7 +9,7 @@ out vec4 FragColor;
 
 void main() {
 	vec4 texcolor = texture(tex, texCoord) * color;
-	texcolor.rgb *= color.a;
-	texcolor.rgb = texcolor.bgr; // swap color channels
+	// texcolor.rgb *= color.a;
+	// texcolor.rgb = texcolor.bgr; // swap color channels
 	FragColor = texcolor;
 }
